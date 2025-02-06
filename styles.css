@@ -1,0 +1,134 @@
+html {
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header{
+    display: grid;    
+    place-items: center;
+    margin: 0 auto;
+    max-width: 85vw;
+}
+
+
+header h1 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.85rem;
+    padding: 0;
+    margin-top: 5rem;
+    margin-bottom: 0;
+
+}
+
+header h2{ 
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: .2rem;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: .7rem;
+}
+
+header p{
+    margin-top: 0;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.15rem;
+    color:hsl(229, 6%, 66%);
+    text-align: center;
+    text-wrap: wrap;
+}
+
+
+
+.Container{
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1); /* Card shadow */
+    text-align:left;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    flex: 1; /* Allow cards to resize equally */
+    border-top-style: solid;
+}
+
+
+.Card h2 {
+    color: hsl(234, 12%, 34%);
+    margin-left: 1rem;   
+    margin-bottom: 0;
+    font-size: 1.6rem;
+}
+
+.Card p {
+    color:hsl(229, 6%, 66%);
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.Card img {
+    align-self: flex-end;
+    margin-top: auto;
+    
+    
+}
+
+.B-Red{
+    border-top-color:hsl(0, 78%, 62%);
+}
+
+.B-Cyan{
+    border-top-color:hsl(180, 62%, 55%) ;
+}
+
+.B-Orange{
+    border-top-color:hsl(34, 97%, 64%) ;
+}
+
+.B-Blue{
+    border-top-color: hsl(212, 86%, 64%) ;
+}
+
+.Card:hover {
+    transform: translateY(-5px);
+}
+
+@media (min-width: 1024px){
+    header{
+        max-width: 25vw;
+    }
+
+    .Container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+    
+    .Card {
+        width: 350px;
+        height: 200px;
+        min-height: auto;
+    }
+}
